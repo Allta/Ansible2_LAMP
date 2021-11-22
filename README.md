@@ -36,5 +36,19 @@ L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôt
   - Autoriser notre serveur web à communiquer avec la base de données
   - Configurer notre table mysql avec les bonnes colonnes et autorisations
 
+Fichier variable pour base de données : 
+```
+mysql_user: "admin"
+mysql_password: "secret"
+mysql_dbname: "blog"
+db_host: XXX.XXX.XXX.XXX
+webserver_host: XXX.XXX.XXX.XXX
+```
+
+- mysql_user : l'utilisateur de notre base de données mysql qui exécutera nos requêtes SQL depuis notre application web.
+- mysql_password : le mot de passe de l'utilisateur de notre base de données mysql.
+- mysql_dbname : le nom de notre base de données.
+- db_host : l'ip de notre machine mysql (utile pour la partie configuration mysql de notre application web).
+- webserver_host : l'ip de la machine web (utile pour autoriser uniquement l'ip du serveur web à communiquer avec notre base de données).
 
 
