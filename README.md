@@ -1,7 +1,7 @@
-# TP Ansible1 - Communication Ynov DevOps B3
+# TP Ansible2 - LAMP Ynov DevOps B3
 
 
-## **Rendu :** Un fichier MD : DEVOPS_ANSIBLE1_[NOM]\_[PRENOM].md
+## **Rendu :** Un fichier MD : DEVOPS_ANSIBLE2_[NOM]\_[PRENOM].md
 
 Vous avez un template de rendu dans le repo. 
 Pour chaque étape, documenter vos actions : 
@@ -20,17 +20,21 @@ Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout
 
 :raising_hand: Si vous avez des soucis n'hésitez pas à m'appeler. 
  
-## Exercice 1: Communication
+## Exercice 1: LAMP
 
-- Créer 3 machines virtuelles Linux dans le même subnet.
-  - un node manager
-  - deux host
-- Créer un utilisateur : `user_ansible` sur les **host**
-- Autoriser la connexion **PubkeyAuthentication** depuis le node manager vers les hosts.
-- Créer votre inventaire Ansible
-  - User par défaut
-  - SSH key path 
-- Lancer un ping pour vérifier la communication via Ansible. 
+L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôtes distants :
+
+- Côté serveur web :
+  - Installer les packages apache2, php et php-mysql
+  - Déployer les sources de notre application dans notre serveur web distant
+  - S'assurer que le service apache est bien démarré
+
+
+- Côté serveur base de données :
+  - Installer les packages mysql
+  - Modifier le mot de passe root
+  - Autoriser notre serveur web à communiquer avec la base de données
+  - Configurer notre table mysql avec les bonnes colonnes et autorisations
 
 
 
