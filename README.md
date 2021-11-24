@@ -22,6 +22,9 @@ Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout
  
 ## Exercice 1: LAMP
 
+Cet exercice en mode projet doit permettre de 
+
+
 L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôtes distants :
 
 - Côté serveur web :
