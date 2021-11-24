@@ -27,7 +27,8 @@ Cet exercice en mode projet doit permettre de :
 - Déployer une stack LAMP containeurisée
   - Pouvoir contrôler la stack via Ansible 
     - Status
-    - Start/Stop/Restart  
+    - Start/Stop/Restart
+    - Build les Dockerfile nécessaire au déploiement de la stack
   - Web : 
     - Sur un serveur dédié à la partie Web 
     - 2 containers Apache/Nginx
@@ -36,9 +37,35 @@ Cet exercice en mode projet doit permettre de :
   - Database :
     - Container Mysql sur serveur séparé de la partie web
     - Persistence des données
-  - Load Balancer : 
+  - ReverseProxy : 
     - En frontal devant les serveurs web
+    - Load Balancing docker
     - Round Robin  
+
+Une nomenclature précise et détaillé des serveurs/container est nécessaire.
+
+**Travail en groupe de 2.**
+#### Rendu :
+- Rapport Technique détaillé
+  - Page de Garde
+  - Sommaire
+  - Introduction
+    - Schéma d'infrastructure Haut Niveau
+  - Partie Reverse Proxy
+    - Schéma d'infrastructure Bas Niveau
+  - Partie Web
+    - Schéma d'infrastructure Bas Niveau
+  - Partie Database
+    - Schéma d'infrastructure Bas Niveau
+  - Conclusion
+  - Annexe 
+    - Source
+
+#### Présentation :
+- Minimum 5min - Maximum 30 min
+- Slides de présentation claires et professionnelles
+- Démo de déploiement
+- Temps Questions/Réponses
 
 
 
