@@ -22,7 +22,15 @@ Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout
  
 ## Exercice 1: LAMP
 
-Cet exercice en mode projet doit permettre de 
+Cet exercice en mode projet doit permettre de : 
+
+- Déployer une stack LAMP containeurisée
+  - Web : 
+    - Sur un serveur dédié à la partie Web 
+    - 2 containers Apache/Nginx
+    - Capacité de scalabité horizontale des containers Web
+  - 
+
 
 
 L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôtes distants :
