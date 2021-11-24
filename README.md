@@ -32,6 +32,7 @@ Cet exercice en mode projet doit permettre de :
     - Sur un serveur dédié à la partie Web 
     - 2 containers Apache/Nginx
     - Capacité de scalabité horizontale des containers Web
+    - Container PHP séparé pour servir tous les containers Web
   - Database :
     - Container Mysql sur serveur séparé de la partie web
     - Persistence des données
