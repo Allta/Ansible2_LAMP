@@ -88,6 +88,7 @@ Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dan
 
 L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôtes distants :
 
+### Web 
 - Côté serveur web : 
   - Build d'une image nginx/apache personnalisée
   - Déploiement d'une image php
@@ -113,7 +114,7 @@ Les variables sont principalement utilisées dans les fichiers templates fournis
 - db_host : l'ip de notre machine mysql (utile pour la partie configuration mysql de notre application web).
 - webserver_host : l'ip de la machine web (utile pour autoriser uniquement l'ip du serveur web à communiquer avec notre base de données).
 
-
+### Mysql 
 - Côté serveur base de données :
   - Installer les packages mysql et les paquets nécessaire au fonctionnement du module mysql d'Ansible (Voir la doc).
   - Modifier le mot de passe root
