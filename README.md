@@ -25,11 +25,19 @@ Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout
 Cet exercice en mode projet doit permettre de : 
 
 - Déployer une stack LAMP containeurisée
+  - Pouvoir contrôler la stack via Ansible 
+    - Status
+    - Start/Stop/Restart  
   - Web : 
     - Sur un serveur dédié à la partie Web 
     - 2 containers Apache/Nginx
     - Capacité de scalabité horizontale des containers Web
-  - 
+  - Database :
+    - Container Mysql sur serveur séparé de la partie web
+    - Persistence des données
+  - Load Balancer : 
+    - En frontal devant les serveurs web
+    - Round Robin  
 
 
 
