@@ -4,6 +4,9 @@
 Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout aller voir la **documentation**. Elle est extremement exhaustive.
 
 :raising_hand: Si vous avez des soucis n'hésitez pas à m'appeler. 
+
+![image](https://user-images.githubusercontent.com/51991304/143248050-399c0254-206b-41f1-b166-6dd3e58b2c21.png)
+
  
 ## Résumé
 
@@ -17,6 +20,7 @@ A partir de votre node manager Ansible, vous devez créer un playbook/rôle perm
     - Build les Dockerfile nécessaire au déploiement de la stack
     - Modifier les containers depuis le node manager via les Dockerfile
     - Choisir les ressources statiques (Site web)
+  -  
   - Web : 
     - Sur un serveur dédié à la partie Web 
     - Container Apache/Nginx
