@@ -9,27 +9,32 @@ Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout
 
 **Travail en groupe de 3 maximum.**
 
-Cet exercice en mode projet doit permettre de : 
+A partir de votre node manager Ansible, vous devez créer un playbook/rôle permettant de : 
 
 - Déployer une stack LAMP containeurisée
   - Pouvoir contrôler la stack via Ansible 
-    - Status
     - Start/Stop/Restart
     - Build les Dockerfile nécessaire au déploiement de la stack
+    - Modifier les containers depuis le node manager via les Dockerfile
+    - Choisir les ressources statiques (Site web)
   - Web : 
     - Sur un serveur dédié à la partie Web 
-    - 2 containers Apache/Nginx
-    - Capacité de scalabité horizontale des containers Web
+    - Container Apache/Nginx
     - Container PHP séparé pour servir tous les containers Web
   - Database :
     - Container Mysql sur serveur séparé de la partie web
-    - Persistence des données
+    - Avoir de la _Persistence des données_ 
+
+En **bonus**, vous pouvez faire évoluer l'infrastructure pour rajoter devant la stack un Reverse Proxy qui fera office de Load Balancer. Permettant de répartir la charge sur les serveurs webs ainsi que de gérer la scalabilité de notre infrastructure.
+
   - ReverseProxy : 
     - En frontal devant les serveurs web
-    - Load Balancing docker
+    - Load Balancing
     - Round Robin  
+    - Capacité de scalabité horizontale des containers Web
 
-Une nomenclature précise et détaillé des serveurs/container est nécessaire.
+
+_**Une nomenclature précise et détaillé des serveurs/container est nécessaire.**_
 
 
 
@@ -39,16 +44,23 @@ Une nomenclature précise et détaillé des serveurs/container est nécessaire.
   - Sommaire
   - Introduction
     - Schéma d'infrastructure Haut Niveau
-  - Partie Reverse Proxy
-    - Schéma d'infrastructure Bas Niveau
   - Partie Web
     - Schéma d'infrastructure Bas Niveau
   - Partie Database
     - Schéma d'infrastructure Bas Niveau
+  - Partie Reverse Proxy
+    - Schéma d'infrastructure Bas Niveau   
   - Vidéo de démonstration 
   - Conclusion
   - Annexe 
   - Source
+
+Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dans une archive **tar.gz** : 
+  - Playbooks
+  - Roles
+  - Inventory
+  - Fichier Variables 
+
 
 ### Présentation :
 - Minimum 5min - Maximum 10 min
