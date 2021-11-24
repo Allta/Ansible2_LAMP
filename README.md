@@ -16,7 +16,7 @@ A chaque exercice rajouter un titre et le nom de l'exercice. La syntaxe ainsi qu
 :sparkles: Une fois le TP et le rendu terminé commitez et pushez le dans le repo. :sparkles:
   
 ### Tips   
-Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout aller voir la **documentation**. Elle est extremement exhaustive. les app
+Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout aller voir la **documentation**. Elle est extremement exhaustive.
 
 :raising_hand: Si vous avez des soucis n'hésitez pas à m'appeler. 
  
