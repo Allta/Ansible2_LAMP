@@ -88,20 +88,16 @@ Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dan
 
 L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôtes distants :
 
-- Côté serveur web :
-  - Installer les packages apache2, php et php-mysql
+- Côté serveur web : 
+  - Build d'une image nginx/apache personnalisée
+  - Déploiement d'une image php
   - Déployer les sources de notre application dans notre serveur web distant
-  - S'assurer que le service apache est bien démarré
+  - S'assurer que le service Web est bien démarré
+  - Docker-compose peut être utilisé pour la stack Web. 
 
+Fichier variable pour la partie Web : 
 
-- Côté serveur base de données :
-  - Installer les packages mysql
-  - Modifier le mot de passe root
-  - Autoriser notre serveur web à communiquer avec la base de données
-  - Configurer notre table mysql avec les bonnes colonnes et autorisations
-
-Fichier variable pour base de données : 
-```
+```yml
 mysql_user: "admin"
 mysql_password: "secret"
 mysql_dbname: "blog"
@@ -109,10 +105,26 @@ db_host: XXX.XXX.XXX.XXX
 webserver_host: XXX.XXX.XXX.XXX
 ```
 
+Les variables sont principalement utilisées dans les fichiers templates fournis.
+
 - mysql_user : l'utilisateur de notre base de données mysql qui exécutera nos requêtes SQL depuis notre application web.
 - mysql_password : le mot de passe de l'utilisateur de notre base de données mysql.
 - mysql_dbname : le nom de notre base de données.
 - db_host : l'ip de notre machine mysql (utile pour la partie configuration mysql de notre application web).
 - webserver_host : l'ip de la machine web (utile pour autoriser uniquement l'ip du serveur web à communiquer avec notre base de données).
 
+
+- Côté serveur base de données :
+  - Installer les packages mysql et les paquets nécessaire au fonctionnement du module mysql d'Ansible (Voir la doc).
+  - Modifier le mot de passe root
+  - Autoriser notre serveur web à communiquer avec la base de données
+    - Dans la configuration MySQL : `/etc/mysql/mysql.conf.d/mysqld.cnf` commenter les lignes :
+      -  `bind-address`
+      -  `skip-external-locking'`
+  - Configurer notre table mysql avec les bonnes colonnes et autorisations
+
+
+
+
+Le rôle Ansible devra pouvoir déployer une Stack LAMP sur des machines fraichement créees sans aucune configuration préalable autre que la connexion SSH et l'installation d'un interpreteur python. 
 
