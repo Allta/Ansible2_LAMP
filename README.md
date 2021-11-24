@@ -68,7 +68,7 @@ Une nomenclature précise et détaillé des serveurs/container est nécessaire.
 - Temps Questions/Réponses
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôtes distants :
 
 - Côté serveur web :
