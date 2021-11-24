@@ -42,6 +42,7 @@ A partir de votre node manager Ansible, vous devez créer un playbook/rôle perm
 
 Schéma de l'infrastructure attendue (Bonus inclus) : 
 
+
 ![image](https://user-images.githubusercontent.com/51991304/143249735-8c925bde-ff0b-47dd-afeb-19641add4bd4.png)
 
 
