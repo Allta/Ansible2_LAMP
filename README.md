@@ -7,6 +7,8 @@ Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout
  
 ## Résumé
 
+**Travail en groupe de 3 maximum.**
+
 Cet exercice en mode projet doit permettre de : 
 
 - Déployer une stack LAMP containeurisée
@@ -29,7 +31,7 @@ Cet exercice en mode projet doit permettre de :
 
 Une nomenclature précise et détaillé des serveurs/container est nécessaire.
 
-**Travail en groupe de 2.**
+
 
 ### Rendu :
 - Rapport Technique détaillé
@@ -43,12 +45,13 @@ Une nomenclature précise et détaillé des serveurs/container est nécessaire.
     - Schéma d'infrastructure Bas Niveau
   - Partie Database
     - Schéma d'infrastructure Bas Niveau
+  - Vidéo de démonstration 
   - Conclusion
   - Annexe 
-    - Source
+  - Source
 
 ### Présentation :
-- Minimum 5min - Maximum 30 min
+- Minimum 5min - Maximum 10 min
 - Slides de présentation claires et professionnelles
 - Démo de déploiement
 - Temps Questions/Réponses
