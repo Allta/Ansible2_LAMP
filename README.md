@@ -51,24 +51,38 @@ _**Une nomenclature précise et détaillé des serveurs/container est nécessair
 
 
 
+## Livrable
 ### Rendu :
+
+Voici un **exemple** de plan attendu pour le Rapport Technique.
+
 - Rapport Technique détaillé
   - Page de Garde
   - Sommaire
   - Introduction
-    - Schéma d'infrastructure Haut Niveau
+    - Schéma d'infrastructure
+    - Résumé de l'automatisation
   - Partie Web
-    - Schéma d'infrastructure Bas Niveau
+    - Dockerfiles
+    - Communication entre les containers
+    - Partage des ressources statiques
+    - Deploiement Stack Web
   - Partie Database
-    - Schéma d'infrastructure Bas Niveau
+    - Dockerfiles
+    - Persistence des données
+    - Communication entre les serveurs
+    - Sécurité de la base de données
   - Partie Reverse Proxy
-    - Schéma d'infrastructure Bas Niveau   
+    - Reverse Proxy
+    - Load Balancing
   - Vidéo de démonstration 
   - Conclusion
   - Annexe 
   - Source
 
-Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dans une archive **tar.gz** : 
+_**Il n'y a pas de minimum ou de maximum de pages démandées. La notation se fera sur la qualité du rendu.**_
+
+Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dans une archive **tar.gz** ou **pushé sur ce repo**: 
   - Playbooks
   - Roles
   - Inventory
@@ -80,6 +94,7 @@ Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dan
 - Slides de présentation claires et professionnelles
 - Démo de déploiement
 - Temps Questions/Réponses
+
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
