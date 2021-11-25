@@ -31,7 +31,7 @@ A partir de votre node manager Ansible, vous devez créer un playbook/rôle perm
     - Avoir de la _Persistence des données_ 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-‼️ En **bonus**, vous pouvez faire évoluer l'infrastructure pour rajouter devant la stack un Reverse Proxy qui fera office de Load Balancer. Permettant de répartir la charge sur les serveurs webs ainsi que de gérer la scalabilité de notre infrastructure.
+🌟 En **bonus**, vous pouvez faire évoluer l'infrastructure pour rajouter devant la stack un Reverse Proxy qui fera office de Load Balancer. Permettant de répartir la charge sur les serveurs webs ainsi que de gérer la scalabilité de notre infrastructure.
 
   - ReverseProxy : 
     - En frontal devant les serveurs web
