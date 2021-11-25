@@ -1,7 +1,7 @@
 # Projet Ansible2 - LAMP Ynov DevOps B3
   
 ### Tips   
-Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout aller voir la **documentation**. Elle est extremement exhaustive.
+Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout aller voir la **documentation**. ❇️ Elle est extremement exhaustive.❇️
 
 :raising_hand: Si vous avez des soucis n'hésitez pas à m'appeler. 
 
@@ -52,6 +52,10 @@ _**Une nomenclature précise et détaillé des serveurs/container est nécessair
 
 
 ## Livrable
+
+‼️ **Plagiat et copier/coller interdit**
+‼️ **Non-respect des consignes sera pénalisé**
+
 ### Rendu :
 
 Voici un **exemple** de plan attendu pour le Rapport Technique.
@@ -91,6 +95,7 @@ Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dan
 
 ### Présentation :
 - Minimum 5min - Maximum 10 min
+- Préparer le temps de parole de chaque intervenant en amont
 - Slides de présentation claires et professionnelles
 - Démo de déploiement
 - Temps Questions/Réponses
