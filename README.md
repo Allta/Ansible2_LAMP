@@ -1,7 +1,8 @@
 # Projet Ansible2 - LAMP Ynov DevOps B3
   
 ### Tips   
-Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout aller voir la **documentation**. ❇️ Elle est extremement exhaustive.❇️
+Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout aller voir la **documentation**. 
+❇️ Elle est extremement exhaustive.❇️
 
 :raising_hand: Si vous avez des soucis n'hésitez pas à m'appeler. 
 
@@ -14,13 +15,12 @@ Si vous avez des problèmes sur une command utilisez `ansible --help` et surtout
 
 A partir de votre node manager Ansible, vous devez créer un playbook/rôle permettant de : 
 
-- Déployer une stack LAMP containeurisée
+- Déployer une stack LAMP **containeurisée** sous Docker
   - Pouvoir contrôler la stack via Ansible 
-    - Start/Stop/Restart
     - Build les Dockerfile nécessaire au déploiement de la stack
     - Modifier les containers depuis le node manager via les Dockerfile
     - Choisir les ressources statiques (Site web)
-  -  
+    - Start/Stop/Restart
   - Web : 
     - Sur un serveur dédié à la partie Web 
     - Container Apache/Nginx
@@ -39,6 +39,9 @@ A partir de votre node manager Ansible, vous devez créer un playbook/rôle perm
     - Capacité de scalabité horizontale des containers Web
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+Le rôle Ansible devra pouvoir déployer une Stack LAMP sur des machines fraichement créees sans aucune configuration préalable autre que la connexion SSH et l'installation d'un interpreteur python. 
+
 
 Schéma de l'infrastructure attendue (Bonus inclus) : 
 
@@ -101,7 +104,6 @@ Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dan
 - Temps Questions/Réponses
 
 
-
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Informations Techniques : 
@@ -125,7 +127,6 @@ mysql_dbname: "blog"
 db_host: XXX.XXX.XXX.XXX
 webserver_host: XXX.XXX.XXX.XXX
 ```
-
 Les variables sont principalement utilisées dans les fichiers templates fournis.
 
 - mysql_user : l'utilisateur de notre base de données mysql qui exécutera nos requêtes SQL depuis notre application web.
@@ -133,6 +134,7 @@ Les variables sont principalement utilisées dans les fichiers templates fournis
 - mysql_dbname : le nom de notre base de données.
 - db_host : l'ip de notre machine mysql (utile pour la partie configuration mysql de notre application web).
 - webserver_host : l'ip de la machine web (utile pour autoriser uniquement l'ip du serveur web à communiquer avec notre base de données).
+
 
 ### Mysql 
 - Côté serveur base de données :
@@ -147,5 +149,5 @@ Les variables sont principalement utilisées dans les fichiers templates fournis
 
 
 
-Le rôle Ansible devra pouvoir déployer une Stack LAMP sur des machines fraichement créees sans aucune configuration préalable autre que la connexion SSH et l'installation d'un interpreteur python. 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
