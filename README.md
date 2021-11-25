@@ -58,7 +58,7 @@ _**Une nomenclature précise et détaillé des serveurs/container est nécessair
 ## Livrable
 
 ‼️ **Plagiat et copier/coller interdit**
-‼️ **Non-respect des consignes sera pénalisé**
+‼️ **Non-respect des consignes sera pénalisé** ‼️
 
 ### Rendu :
 
