@@ -109,6 +109,11 @@ Tout le dossier `/etc/ansible` ainsi que contenu suivant devront être rendu dan
 
 ## Informations Techniques : 
 
+Ansible Docker Module : https://docs.ansible.com/ansible/latest/collections/community/docker/index.html
+
+**Regarder le menu de gauche pour trouver : docker_container ou docker_image.**
+
+
 L'exécution de ce Playbook automatisera donc les actions suivantes sur nos hôtes distants :
 
 ### Web 
